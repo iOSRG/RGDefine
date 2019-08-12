@@ -7,6 +7,7 @@
 //
 
 #import "RGViewController.h"
+#import "RGClassHeader.h"
 
 @interface RGViewController ()
 
@@ -17,7 +18,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    [kNSNotificationCenter postNotificationName:@"TEST" object:@""];
+    
+    kAlertViewTips(@"测试", @"取消23213321321");
 }
 
 - (void)didReceiveMemoryWarning

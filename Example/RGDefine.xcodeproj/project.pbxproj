@@ -41,8 +41,8 @@
 		072B0A4D96DEB9A37F949D15 /* Pods-RGDefine_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGDefine_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RGDefine_Example/Pods-RGDefine_Example.release.xcconfig"; sourceTree = "<group>"; };
 		0FC374A2F678BD042F0CD3F2 /* Pods-RGDefine_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGDefine_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RGDefine_Tests/Pods-RGDefine_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		1290D59C308C62659B01B642 /* Pods_RGDefine_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RGDefine_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		28B6424DA7E4694E9599E6B6 /* RGDefine.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RGDefine.podspec; path = ../RGDefine.podspec; sourceTree = "<group>"; };
-		303A41A93E3B44EF2C9F80EA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		28B6424DA7E4694E9599E6B6 /* RGDefine.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RGDefine.podspec; path = ../RGDefine.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		303A41A93E3B44EF2C9F80EA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3370621F5041335CC0BA8127 /* Pods_RGDefine_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RGDefine_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		594670DC363ED15FB8BBB951 /* Pods-RGDefine_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGDefine_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RGDefine_Example/Pods-RGDefine_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* RGDefine_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGDefine_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,7 +66,7 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DAA961D08A5F8AE673D8E07F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DAA961D08A5F8AE673D8E07F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,7 +207,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				92B5CEA897B5544550413917 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -328,24 +327,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		92B5CEA897B5544550413917 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RGDefine_Example/Pods-RGDefine_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RGDefine/RGDefine.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RGDefine.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RGDefine_Example/Pods-RGDefine_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -488,6 +469,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RGDefine/RGDefine-Prefix.pch";
 				INFOPLIST_FILE = "RGDefine/RGDefine-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -504,6 +486,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RGDefine/RGDefine-Prefix.pch";
 				INFOPLIST_FILE = "RGDefine/RGDefine-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

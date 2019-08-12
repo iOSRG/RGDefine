@@ -1,0 +1,6 @@
+framework module RGDefine {
+  umbrella header "RGDefine-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_RGDefine_Tests {
+  umbrella header "Pods-RGDefine_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

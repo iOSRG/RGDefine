@@ -1,0 +1,16 @@
+PODS:
+  - RGDefine (0.0.1)
+
+DEPENDENCIES:
+  - RGDefine (from `../`)
+
+EXTERNAL SOURCES:
+  RGDefine:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RGDefine: 5bc858d23c61c4ffff2ecfb77934743d0f1e4ba0
+
+PODFILE CHECKSUM: aa0a8229f33de4a3667192eedc0129cee071791e
+
+COCOAPODS: 1.5.0
