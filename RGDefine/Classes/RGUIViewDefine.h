@@ -9,7 +9,7 @@
 //设置圆角
 #define kSetCornerRadius(View,Radius)\
         [View.layer setCornerRadius:Radius];\
-        [view.layer setMasksToBounds:YES]
+        [View.layer setMasksToBounds:YES]
 
 //设置边框颜色和宽度
 #define kSetBorderColorAndWidth(View,Color,Width)\
@@ -26,7 +26,10 @@
 [[[UIAlertView alloc]initWithTitle:TipsTitle message:Message delegate:nil cancelButtonTitle:CancelTitle otherButtonTitles: nil] performSelectorOnMainThread:@selector(show) withObject:nil waitUntilDone:YES]
 
 
-
+//设置TextField的占位文字和颜色
+#define kTextFieldPlaceholderAndPlaceholderColor(textField,text,color)\
+        textField.placeholder = text;\
+        [textField setValue:color forKeyPath:@"_placeholderLabel.textColor"]
 
 
 

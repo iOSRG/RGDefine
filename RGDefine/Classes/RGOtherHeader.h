@@ -35,8 +35,8 @@
 
 #define kIPhoneX     (((kHeight == 812) && (kWidth == 375)) || ((kHeight == 896) && (kWidth == 414)))
 
-#define kNavBarH      (KIPhoneX ?  88 : 64)
-#define kTabbarH      (KIPhoneX ?  83 : 49)
+#define kNavBarH      (kIPhoneX ?  88 : 64)
+#define kTabbarH      (kIPhoneX ?  83 : 49)
 
 
 //MARK: - Prinyt

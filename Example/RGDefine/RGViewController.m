@@ -10,6 +10,7 @@
 #import "RGClassHeader.h"
 
 @interface RGViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *tf;
 
 @end
 
@@ -21,7 +22,12 @@
 	
     [kNSNotificationCenter postNotificationName:@"TEST" object:@""];
     
-    kAlertViewTips(@"测试", @"取消23213321321");
+//    kAlertViewTips(@"测试", @"取消23213321321");
+    
+//    UITableViewCell *cell = [UITableViewCell new];
+   
+    kTextFieldPlaceholderAndPlaceholderColor(self.tf, @"测试一下", [UIColor redColor]);
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -29,5 +35,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 @end
